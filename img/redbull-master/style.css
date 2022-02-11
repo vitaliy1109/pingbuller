@@ -1,0 +1,612 @@
+/*reset style*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end reset style*/
+@font-face {
+font-family: "LeagueGothic"; 
+src: url("font/LeagueGothic/LeagueGothicRegular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+@font-face {
+font-family: "Nunitosans"; 
+src: url("font/Nunitosans/Nunitosansextralight.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+.container{
+	max-width:1100px;
+	width: 100%;
+	margin: auto;
+}
+.container-page{
+	width:100%;
+	margin:auto;
+	background: rgba(0,0,0,0.2);
+}
+.container-main{
+	width:100%;
+	height: auto;
+	overflow:hidden;
+	margin:auto;
+	background: linear-gradient(to top,#35273c, #765283);
+		-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+}
+.container-bottom{
+	width: 100%;
+	height: auto;
+	margin:auto;
+	background: #f9f9f9;
+}
+header{
+	background: url(img/bg.jpg)no-repeat;
+	max-width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center center;
+	padding: 	50px 0;
+}
+.header-main{
+	display:flex;
+
+}
+.logo{
+	padding:0 20px;
+}
+.menu{
+	margin-left: auto;
+}
+.menu>ul{
+	display:flex;
+
+}
+.menu>ul>li{
+	padding: 30px;
+}
+.menu>ul>li>a{
+	font-size: 24px;
+	text-transform: uppercase;
+	color:#fff;
+	font-family:LeagueGothic;
+	text-decoration: none;
+text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.active{
+	border-bottom:2px solid #edbfff;
+}
+.slide{
+	display:flex;
+}
+.slide2{
+	margin-left:auto;
+	padding:0 100px;
+	cursor:pointer;
+}
+.bx-wrapper{
+	background: transparent!important;
+	border:5px solid transparent!important;
+	box-shadow: none!important;
+}
+.slide1{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 0 0 100px;
+}
+.slide1 h1{
+	color:#fff;
+	font-family:LeagueGothic;
+	font-size: 56px;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.slide1 h2{
+	color:#edbfff;
+	font-family:LeagueGothic;
+	font-size: 36px;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+}
+.slide1 p{
+	color:#fff;
+	font-family:Nunitosans;
+	font-size: 18px;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	line-height: 1.2;
+}
+.content{
+	display: flex;
+	justify-content: space-between;
+	color:#fff;
+	padding: 20px;
+}
+.content>div>h2{
+	color:#fff;
+	font-family:LeagueGothic;
+	font-size: 36px;
+	padding: 50px 50px 0 50px;
+	text-transform: uppercase;
+}
+.content>div>p{
+	color:#fff;
+	font-family:Nunitosans;
+	font-size: 18px;
+	line-height: 1.6;
+	padding: 20px 50px 50px 50px;
+}
+.read{
+	color:#fff;
+	font-family:LeagueGothic;
+	font-size: 18px;
+	text-transform: uppercase;
+	float:right;
+	padding: 0 100px 50px 50px;
+	cursor:pointer;
+}
+.read:hover{
+	text-shadow: 3px 1px 7px rgba(252, 252, 252, 1);
+
+}
+.right{
+	width: 50%;
+}
+.left{
+	width: 50%;
+}
+.bg-slide{
+	padding: 30px;
+	position: relative;
+	max-width: 428px;
+	height: auto;
+}
+.content-right{
+	padding: 60px;
+  position: relative;
+}
+.text-right{
+	position:absolute;
+	height: auto;
+	overflow:hidden;
+}
+.text-right h1{
+	font-family:LeagueGothic;
+	font-size:26px;
+	text-transform: uppercase;
+	color:#454545;
+}
+.post-right img{
+	width: 49px;
+	height: 49px;
+}
+.new{
+	background: #fff;
+	min-width: 300px;
+  position: relative;
+  border-bottom:1px solid #efefef;
+  border-right:1px solid #efefef;
+}
+.new::before, .new::after {
+    content: ''; 
+    position: absolute;
+    right: 20px; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #efefef;
+   }
+   .new::after {
+    border-top: 10px solid white;
+    bottom: -19px; 
+   }
+.post-right-text{
+	padding-left: 30px;
+}
+.post-right-text p{
+	font-family:Nunitosans;
+	font-size: 18px;
+	line-height: 1.2;
+}
+p.bold{
+	font-weight: bold;
+}
+.post-right{
+	display:flex;
+	padding:10px 0;
+}
+.posy-right img{
+	max-width: 49px;
+	max-height: 49px;
+}
+.photo{
+	position: absolute;
+	top:50px;
+	left:0px;
+	z-index: 2;
+}
+.text	{
+	padding:30px;
+}
+.text h1{
+	font-family:LeagueGothic;
+	font-size:26px;
+	text-transform: uppercase;
+	color:#454545;
+}
+.text span{
+	color:#edbfff;
+}
+.text p{
+	font-family:Nunitosans;
+	font-size: 18px;
+	line-height: 1.4;
+	color:#454545;
+	padding-top: 10px;
+}
+.content>div{
+	position: relative;
+}
+.fa-wrench{
+	position: absolute;
+	left:-10px;
+}
+.fa-comment{
+	position: absolute;
+	left:-10px;
+}
+.fa-itunes-note{
+	position: absolute;
+	left:-10px;
+}
+.center{
+	display:flex;
+}
+.read-more-right{
+	    color: #424242;
+    font-family: LeagueGothic;
+    font-size: 22px;
+    text-transform: uppercase;
+    float: right;
+    padding: 0 100px 50px 50px;
+    cursor: pointer;
+}
+.logomin{
+	width: 100%;
+	height: auto;
+	margin-top: auto;
+	border-top:1px solid #efefef;
+	border-bottom:1px solid #efefef;
+	background: #f9f9f9;
+	padding-top: 20px;
+}
+.logos{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	width: 100%;
+	margin:auto;
+	padding-bottom: 30px;
+	flex-wrap: wrap;
+}
+.bottom-container{
+	width: 100%;
+	height: auto;
+	background: #ececec;
+	overflow: hidden;
+}
+.comment{
+	display:flex;
+	justify-content: space-between;
+}
+.pigbull h2{
+	font-family:LeagueGothic;
+	font-size:66px;
+	text-transform: uppercase;
+	color:#454545;
+}
+.pigbull span{
+	color:#c9c9c9;
+}
+.copyright{
+	font-family:Nunitosans;
+	font-size: 18px;
+	line-height: 1.4;
+	color:#c9c9c9;
+	font-style: italic;
+}
+.pigbull p{
+	font-family:Nunitosans;
+	font-size: 18px;
+	line-height: 1.4;
+	color:#454545;
+}
+.resent h2{
+	font-family:LeagueGothic;
+	font-size:46px;
+	text-transform: uppercase;
+	color:#454545;
+}
+.resent p{
+	font-family:Nunitosans;
+	font-size: 18px;
+	line-height: 1.4;
+	color:#454545;
+}
+.comment>div{
+	padding: 50px 30px;
+}
+.logos>div{
+		padding:30px;
+	}
+footer{
+	background: url(img/bg-footer.jpg) no-repeat;
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+.design{
+	margin-left: auto;
+	padding-top: 30px;
+}
+.design a{
+	font-family:Nunitosans!important;
+	font-size: 16px!important;
+	color:#fff!important;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+}
+.design span{
+	font-weight: bold;
+}
+.bottom-menu{
+	display:flex;
+	padding: 20px;
+}
+.bottom-menu ul{
+	display:flex;
+}
+.bottom-menu ul li{
+	padding: 30px;
+}
+.bottom-menu>nav>ul>li>a{
+	font-size: 22px;
+	text-transform: uppercase;
+	color:#fff;
+	font-family:LeagueGothic;
+	text-decoration: none;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 950px){
+	.slide1 h1{
+		font-size: 36px;
+	}
+	.slide1 h2{
+		font-size: 15px;
+	}
+	.slide1{
+		padding:20px 20px 0 50px;
+	}
+	.slide2{
+		padding:0;
+	}
+		.menu>ul>li{
+		padding:30px 15px;
+	}
+	.content{padding: 0 20px;}
+	.center{
+		height: auto;
+    overflow: hidden;
+    min-height: 450px;
+    padding: 0 20px;
+	}
+	.text p{
+		font-size:1em;
+	}
+}
+@media (max-width: 769px){
+	.content>div>h2{
+		font-size:26px;
+		padding: 20px;
+	}
+	.content>div>p{
+		font-size:16px;
+		padding: 20px;
+	}
+	.bottom-menu>nav>ul>li>a{
+		font-size:18px!important;
+	}
+	.bottom-menu ul li{
+		padding:20px!important;
+	}
+	.design{margin:auto;}
+	.read-more-right{
+		padding: 0;
+	}
+}
+@media (max-width: 767px){
+	
+	.bottom-menu{
+		flex-direction: column;
+	}
+	.design{
+		margin:auto;
+	}
+	.slide{
+		justify-content: center;
+	}
+	.slide2{
+		display:none;
+	}
+	.slide1 p{
+		display:none;
+	}
+	.slide1{
+		padding:50px;
+	}
+	.slide1 h1{
+		font-size: 36px;
+	}
+	.slide1 h2{
+		font-size: 15px;
+	}
+	.menu>ul{
+		display:flex;
+		flex-direction: column;
+		/*position: absolute;
+		left: 25%;*/
+		justify-content: center;
+		top: 0;
+		z-index: 999;
+		overflow: hidden;
+	}
+	.header-main{
+		flex-direction: column;
+	}
+	.logo{
+		display:flex;
+		justify-content: center;
+	}
+	.menu{
+		margin:auto;
+		height: 60px;
+		width: 50%;
+		position: relative;
+
+	}
+	.menu ul{
+		border-radius:10px;
+	}
+	.menu ul li{
+		text-align: center;
+		transform: translateY(-600px);
+		transition: all .5s;
+		padding:18px 60px;
+		background-color: #3f3247;
+	}
+	.menu ul li:first-child{
+		display: block;
+		transform: translateY(0px);
+		background-color: transparent;
+		z-index: 2;
+	}
+	.menu ul:hover li{
+		display: block;
+		transform: translateY(0px);
+	}
+	.menu ul li:hover{
+		background-color: #2c2332;
+		border-bottom: 2px solid #edbfff;
+	}
+	.content{
+		flex-direction: column;
+		padding: 0 50px;
+	}
+	.center{
+		display:block;
+	}
+	.left{
+		width: 100%;
+	}
+	.right{
+		width: 100%;
+	}
+	.content-right{
+		padding: 10px 20px 10px 30px;
+	}
+	.text-right{
+		position: inherit;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 30px 0;
+	}
+	.comment{
+		flex-direction: column;
+	}
+	.topmenu li{
+		z-index:22222;
+	}
+	.bottom{
+		padding: 0 50px;
+	}
+
+	
+
+	
+}
+@media (max-width: 425px){
+	.photo{
+		top:0;
+		left:0;
+	}
+	.bottom-menu nav{
+		display:none;
+	}
+	.text p{
+		font-size: 0.8em;
+	}
+	.slide-bg{
+		height: 400px;
+	}
+	.content>div>p{
+	padding:20px 0px 0px 50px;
+	}
+	.bg-slide{
+		padding: 0;
+		margin:20px 0;
+	}
+	.text{
+		padding:20px 20px 20px 50px;
+	}
+	.logos>div{
+		padding: 10px;
+	}
+}
